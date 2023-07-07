@@ -1,0 +1,5 @@
+Math.Max();
+Math.min();
+Math.random();
+
+var exmp = age < 18 ? "young" : "OldEnough";
