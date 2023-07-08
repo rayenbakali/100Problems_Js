@@ -2,7 +2,7 @@ function doubleChar(str) {
   return str
     .split("")
     .map((m) => m.repeat(2))
-    .join(""n);
+    .join("");
 }
 
 console.log(doubleChar("salem"));
