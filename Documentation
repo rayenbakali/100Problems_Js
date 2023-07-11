@@ -3,3 +3,13 @@ Math.min();
 Math.random();
 
 var exmp = age < 18 ? "young" : "OldEnough";
+
+//ARRAY ITERATIONS//
+
+//For each
+
+[1, 2, 3].forEach(function (item, index) {
+  console.log(item, index);
+});
+
+//Map
