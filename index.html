@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo">salem salem salem salem salem salem salem</p>
+    <button onclick="salem()">salem ya zahi wala mesh lezem</button>
+
+    <dialog id="d">
+      <h1>SALEM ALAYKOM</h1>
+    </dialog>
+
+    <button onclick="d.showModal()">SALEM</button>
+  </body>
+</html>
+
+<script>
+  function salem() {
+    if (document.getElementById("demo").innerHTML === "") {
+      document.getElementById("demo").innerHTML = "SALEM SALEM SALEM";
+    } else if (document.getElementById("demo").innerHTML !== "") {
+      document.getElementById("demo").innerHTML = "";
+    }
+  }
+</script>

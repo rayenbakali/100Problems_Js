@@ -3,3 +3,16 @@ Math.min();
 Math.random();
 
 var exmp = age < 18 ? "young" : "OldEnough";
+
+//Get HTML CONTENT
+let html = document.getElementById("myP").innerHTML;
+//CHANGE HTML CONTENT
+document.getElementById("demo").innerHTML = "TRA TRA";
+
+// MUST TRY POPEROVER
+
+//WEB GPU IS NEXT AFTER WEB GL
+
+//TENSERFLOW
+
+//WE USUALLY USE MEDIAQUERIES FOR RESPONSIVENESS : CONTAINER QUERIES IS A SOLUTION
