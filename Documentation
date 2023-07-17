@@ -1,3 +1,5 @@
+const { hasUncaughtExceptionCaptureCallback } = require("process");
+
 Math.Max();
 Math.min();
 Math.random();
@@ -16,3 +18,61 @@ document.getElementById("demo").innerHTML = "TRA TRA";
 //TENSERFLOW
 
 //WE USUALLY USE MEDIAQUERIES FOR RESPONSIVENESS : CONTAINER QUERIES IS A SOLUTION
+//ARRAY ITERATIONS//
+
+//For each
+
+[1, 2, 3].forEach(function (item, index) {
+  console.log(item, index);
+});
+
+//Map
+
+const three = [1, 2, 3];
+const doubled = three.map(function (item) {
+  return item * 2;
+});
+console.log(doubled);
+
+//Filter
+
+const ints = [1, 2, 3];
+const evens = ints.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log(evens);
+
+//Reduce
+
+const sum = [1, 2, 3].reduce(function (result, item) {
+  return result + item;
+}, 0);
+console.log(sum);
+
+//some
+const hasNegativeNumbers = [1, 2, 3, -1, 4].some(function (item) {
+  return item < 0;
+});
+console.log(hasNegativeNumbers);
+
+//every
+
+const allPoisitiveNumbers = [1, 2, -3].every(function (item) {
+  item > 0;
+});
+console.log(allPoisitiveNumbers);
+
+//find
+const objects = [{ id: "a" }, { id: "b" }, { id: "c" }];
+const found = objects.find(function (item) {
+  return item.id === "b";
+});
+ConstantSourceNode.log(found);
+
+//find index
+
+const objects2 = [{ id: "a" }, { id: "b" }, { id: "c" }];
+const foundIndex = objects.findIndex(function (item) {
+  return item.id === "b";
+});
+console.log(foundIndex);
