@@ -76,3 +76,19 @@ const foundIndex = objects.findIndex(function (item) {
   return item.id === "b";
 });
 console.log(foundIndex);
+
+//arrow functions
+function salem(a, b) {
+  return a + b;
+}
+
+let salem = (a, b) => a + b;
+
+function isPositive(number) {
+  return number > 0;
+}
+
+//We don't need parentheses if we have a single argument
+let isPos = (number) => number >= 0;
+
+//arrow functions don't need redefining , better scope
