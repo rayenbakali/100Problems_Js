@@ -92,3 +92,28 @@ function isPositive(number) {
 let isPos = (number) => number >= 0;
 
 //arrow functions don't need redefining , better scope
+
+//Dates
+//date objects are static
+//months go
+const d = new Date();
+
+const d = new Date("yyyy-mm-dd");
+
+new Date(date string) or Date(year,month) etc...
+
+//DOM MANIPULATION
+<p id="id"></p>
+<script>document.getElementById("id").innerHTML="Hello world"</script>
+
+document.getElementsByClassName
+document.getElementsByTagName
+
+Element.attribute
+Element.innerHTML
+document.getElementsByTagName()
+document.getElementsByTagNameNS
+
+//Immediate Call of Arrow Function
+(()=>{
+document.getElementById("demo").innerHTML = Date();})();
