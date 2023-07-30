@@ -1,0 +1,32 @@
+Js basic 
+Reference vs value
+Short circuiting
+Array Methods
+Asynchronous  code
+Es6 concepts
+
+
+_______________________________________________________
+pass by Reference vs value 
+
+reference : data types that are passed by reference : 
+array or object or function
+
+passed by value :boolean , null ,undefined , String and number
+
+
+exp :
+let c = [1,2] //0x01
+console.log(c) //[1,2]
+add(c,3)//if we  use array.push in the function we call the adress of the previous array 
+console.log(c)//[1,2,3]
+
+add(c,3)//if we use array=[element], we reference it to a new array with the adress of 0x02 for example
+
+console.log(c)//[1,2]
+
+function add(array,element){// (0x01 , 3)
+ array.push(element)
+}
+
+function is a variable or an object and we can pass it down as a variable too ( mahesh haja okhra jemla)
