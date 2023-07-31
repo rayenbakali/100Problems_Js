@@ -31,4 +31,89 @@ function add(array,element){// (0x01 , 3)
 
 function is a variable or an object and we can pass it down as a variable too ( mahesh haja okhra jemla)
 
+_______________________________________________________
 
+
+
+export default function dosmth(){
+}
+==>
+
+export const dosmth=()=>{}
+____________________
+Ternary Operators : 
+
+if(true){
+}else{
+}
+
+==>
+
+let age = 16;
+let name ="Pedro"; 
+==>
+let name = age > 10 && "Pedro"
+let name = age > 10 || "Pedro" opposite 
+let name = age > 10 ? "Pedro":"Jack 
+example :
+const Component =()=>{
+    return age > 10?<div>Pedro</div> : <div> Jack </div>
+}
+
+objects are known as dicitionnairies in python or Hash tables , hashmaps.
+
+____________________
+Objects:
+
+
+const person = {
+    name:"Pedro",
+    age: 20,
+    isMarried : false
+};
+
+const name = person.name
+const age = person.age
+const isMarried : person.isMarried
+
+==>
+Deconstructor :
+
+const {name,age,isMarried} = person
+
+if we have a name = "salem" and we want to assign it to the object property with same name , we don't have to re-write it 
+just call it once :
+const person={
+    name;
+}
+
+
+Second Example :
+We want to make a same object  just change one single property:
+
+const person2= {...person,name:"Jack"}
+Ok i want to keep everything as the previous one , just change this one.
+
+example :
+const name=["Pedro","Jack","Jessica]
+const names2 = [...names,"Joel"];
+
+_______________________________________________________
+JS ARRAYS FUNCTIONS : MUST UNDERSTAND
+
+const name=["Pedro","Jack","Jessica]
+
+.map()
+.filter()
+.reduce()
+
+names.map((name)=>{
+return <h1>{name}</h1>
+})
+
+names.filter((name)=>{
+return  name!=="Pedro"
+})
+
+_______________________________________________________ 
+Async + Await + Fetch
