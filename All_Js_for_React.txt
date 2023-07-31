@@ -30,3 +30,5 @@ function add(array,element){// (0x01 , 3)
 }
 
 function is a variable or an object and we can pass it down as a variable too ( mahesh haja okhra jemla)
+
+
