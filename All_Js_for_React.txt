@@ -121,3 +121,48 @@ Async + Await + Fetch
 
 _______________________________________________________
 DOM : document object model (presentation of the page that js can interact with )
+
+_______________________________________________________
+Ternary Operators: !!SO IMPORTANT
+
+age = 17
+
+isadult = false
+
+isAdult = age > 18 ? true : false
+
+or by default 
+
+isAdult= age ? 18;
+
+
+let color ="green"
+isCorrent =false;
+
+color = isCorrent? "green":"red"
+or
+color = isCorrect && "green
+
+____________________
+import axios from "axios"
+export default function(){
+
+}
+___________________
+
+Optional chaining :
+React sometimes tries to displays data from certain elements before it's done fetching
+tell js that we will only access name in case of person exists , add "?"
+const fetchData = async()=>{
+    const data = await fetch("imaginaryapi.com");
+    const name = data.person?.name;
+}
+
+
+_________________
+
+Template literals : 
+const fetchData = async(animalname)=>{
+    const data = await fetch(`imaginaryapi.com/searchTerm=$animalname`);
+    const name = data.person?.name;
+}
