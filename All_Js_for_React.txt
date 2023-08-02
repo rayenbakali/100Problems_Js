@@ -117,3 +117,7 @@ return  name!=="Pedro"
 
 _______________________________________________________ 
 Async + Await + Fetch
+
+
+_______________________________________________________
+DOM : document object model (presentation of the page that js can interact with )
