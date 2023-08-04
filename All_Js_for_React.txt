@@ -166,3 +166,16 @@ const fetchData = async(animalname)=>{
     const data = await fetch(`imaginaryapi.com/searchTerm=$animalname`);
     const name = data.person?.name;
 }
+
+_______________________________________________________
+Deconstructoring Part 2 :
+const alphabet = ['A' , 'B' , 'C', 'D']
+const [a, b] = alphabet
+console.log(a )//A
+console.log(b)//B
+
+const [a,,c] = alphabet
+console.log(a )//A
+
+consone.log(c) //C
+
