@@ -179,3 +179,19 @@ console.log(a )//A
 
 consone.log(c) //C
 
+_________________Seocnd example :
+const personOne ={
+    name:'kyle',
+    age :24,
+    favoriteFood : 'Rice',
+    address:{
+        city:'chihemk',
+        state :'cihemek martin'
+    }
+}
+
+function printuser({name,age,favoriteFood='WaterMelon'}){
+    console.log(`Name is: ${name} . Age is ${age .Food is ${favoriteFood}})
+}
+
+printuser(personOne)
