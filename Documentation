@@ -95,7 +95,6 @@ let isPos = (number) => number >= 0;
 
 //Dates
 //date objects are static
-//months go
 const d = new Date();
 
 const d = new Date("yyyy-mm-dd");
