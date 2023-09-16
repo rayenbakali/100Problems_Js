@@ -1,0 +1,197 @@
+Js basic 
+Reference vs value
+Short circuiting
+Array Methods
+Asynchronous  code
+Es6 concepts
+
+
+_______________________________________________________
+pass by Reference vs value 
+
+reference : data types that are passed by reference : 
+array or object or function
+
+passed by value :boolean , null ,undefined , String and number
+
+
+exp :
+let c = [1,2] //0x01
+console.log(c) //[1,2]
+add(c,3)//if we  use array.push in the function we call the adress of the previous array 
+console.log(c)//[1,2,3]
+
+add(c,3)//if we use array=[element], we reference it to a new array with the adress of 0x02 for example
+
+console.log(c)//[1,2]
+
+function add(array,element){// (0x01 , 3)
+ array.push(element)
+}
+
+function is a variable or an object and we can pass it down as a variable too ( mahesh haja okhra jemla)
+
+_______________________________________________________
+
+
+
+export default function dosmth(){
+}
+==>
+
+export const dosmth=()=>{}
+____________________
+Ternary Operators : 
+
+if(true){
+}else{
+}
+
+==>
+
+let age = 16;
+let name ="Pedro"; 
+==>
+let name = age > 10 && "Pedro"
+let name = age > 10 || "Pedro" opposite 
+let name = age > 10 ? "Pedro":"Jack 
+example :
+const Component =()=>{
+    return age > 10?<div>Pedro</div> : <div> Jack </div>
+}
+
+objects are known as dicitionnairies in python or Hash tables , hashmaps.
+
+____________________
+Objects:
+
+
+const person = {
+    name:"Pedro",
+    age: 20,
+    isMarried : false
+};
+
+const name = person.name
+const age = person.age
+const isMarried : person.isMarried
+
+==>
+Deconstructor :
+
+const {name,age,isMarried} = person
+
+if we have a name = "salem" and we want to assign it to the object property with same name , we don't have to re-write it 
+just call it once :
+const person={
+    name;
+}
+
+
+Second Example :
+We want to make a same object  just change one single property:
+
+const person2= {...person,name:"Jack"}
+Ok i want to keep everything as the previous one , just change this one.
+
+example :
+const name=["Pedro","Jack","Jessica]
+const names2 = [...names,"Joel"];
+
+_______________________________________________________
+JS ARRAYS FUNCTIONS : MUST UNDERSTAND
+
+const name=["Pedro","Jack","Jessica]
+
+.map()
+.filter()
+.reduce()
+
+names.map((name)=>{
+return <h1>{name}</h1>
+})
+
+names.filter((name)=>{
+return  name!=="Pedro"
+})
+
+_______________________________________________________ 
+Async + Await + Fetch
+
+
+_______________________________________________________
+DOM : document object model (presentation of the page that js can interact with )
+
+_______________________________________________________
+Ternary Operators: !!SO IMPORTANT
+
+age = 17
+
+isadult = false
+
+isAdult = age > 18 ? true : false
+
+or by default 
+
+isAdult= age ? 18;
+
+
+let color ="green"
+isCorrent =false;
+
+color = isCorrent? "green":"red"
+or
+color = isCorrect && "green
+
+____________________
+import axios from "axios"
+export default function(){
+
+}
+___________________
+
+Optional chaining :
+React sometimes tries to displays data from certain elements before it's done fetching
+tell js that we will only access name in case of person exists , add "?"
+const fetchData = async()=>{
+    const data = await fetch("imaginaryapi.com");
+    const name = data.person?.name;
+}
+
+
+_________________
+
+Template literals : 
+const fetchData = async(animalname)=>{
+    const data = await fetch(`imaginaryapi.com/searchTerm=$animalname`);
+    const name = data.person?.name;
+}
+
+_______________________________________________________
+Deconstructoring Part 2 :
+const alphabet = ['A' , 'B' , 'C', 'D']
+const [a, b] = alphabet
+console.log(a )//A
+console.log(b)//B
+
+const [a,,c] = alphabet
+console.log(a )//A
+
+consone.log(c) //C
+
+_________________Seocnd example :
+const personOne ={
+    name:'kyle',
+    age :24,
+    favoriteFood : 'Rice',
+    address:{
+        city:'chihemk',
+        state :'cihemek martin'
+    }
+}
+
+function printuser({name,age,favoriteFood='WaterMelon'}){
+    console.log(`Name is: ${name} . Age is ${age .Food is ${favoriteFood}})
+}
+
+printuser(personOne)
