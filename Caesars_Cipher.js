@@ -7,10 +7,12 @@ function rot13(str) {
       newString += str[i];
     } else {
       let newIndex = (index + 13) % 26;
-      newStr += alphabet[newIndex];
+      newString += alphabet[newIndex];
     }
   }
-  return newStr;
+  return newString;
 }
 
 rot13("SERR PBQR PNZC");
+
+console.log(rot13("SERR PBQR PNZC"));
